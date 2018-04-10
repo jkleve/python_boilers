@@ -54,7 +54,7 @@ def main(args):
     pass
 
 
-if __name__ == '__main__':
+def cli():
     parser = ArgumentParser(prog=PROGRAM_NAME, description=program_description())
     parser.add_argument('-v', '--verbose', default=0, action='count', help='verbosity level. counting (e.g. -v, -vv)')
     parser.add_argument('--version', action='version', version='%(prog)s {__version__}'.format(**globals()))
@@ -65,5 +65,9 @@ if __name__ == '__main__':
 
     configure_logging(args.verbose)
 
-    main(args)
+    return main(args)
+
+
+if __name__ == '__main__':
+    sys.exit(cli())
 
