@@ -3,8 +3,8 @@ import logging
 import logging.config
 import sys
 
-# __author__ = None
-# __license__ = None
+# __author__ = ''
+# __license__ = ''
 __version__ = '0.1.0'
 PROGRAM_NAME = 'argparse logging boiler'
 
