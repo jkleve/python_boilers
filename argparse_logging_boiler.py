@@ -8,7 +8,7 @@ import sys
 __version__ = '0.1.0'
 PROGRAM_NAME = 'argparse logging boiler'
 
-LOGGING_FORMAT = '%(asctime)s %(levelname)-7s %(name)s: %(message)s'
+LOGGING_FORMAT = '%(asctime)s %(levelname)-8s %(name)s: %(message)s'
 LOGGING_DATEFMT = '%H:%M:%S'
 
 
