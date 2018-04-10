@@ -18,6 +18,10 @@ def program_description():
     return None
 
 
+def main(args):
+    pass
+
+
 def configure_logging(verbosity):
     logging_config = {
         'version': 1,
@@ -48,10 +52,6 @@ def configure_logging(verbosity):
         logging_config['loggers']['']['level'] = logging.DEBUG
 
     logging.config.dictConfig(logging_config)
-
-
-def main(args):
-    pass
 
 
 def cli():
